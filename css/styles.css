@@ -14,6 +14,8 @@
   --logo-btn-hover: #188ce8;
   --footer-icon: #44454E;
   --portfolio-section-gap: 30px;
+
+  --animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 *,
@@ -118,6 +120,10 @@ img {
   text-decoration: none;
 
   line-height: 1.14;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function:var(--animation);
 }
 .header-nav:hover,
 .header-nav:focus {
@@ -154,6 +160,11 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation);
+
 }
 .header-contact:hover,
 .header-contact:focus {
@@ -212,6 +223,10 @@ img {
   letter-spacing: 0.06em;
   border-radius: 4px;
   border: 0;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation);
 }
 .logo-btn:hover,
 .logo-btn:focus {
@@ -238,7 +253,6 @@ img {
 }
 
 .features-icon{
-  
   margin: 0px;
   width: 70px;
   height: 70px;
@@ -293,10 +307,38 @@ img {
   text-align: center;
 }
 .gellery-list {
+  position: relative;
   margin-right: 30px;
 }
 .gellery-list:last-child {
   margin-right: 0;
+
+}
+
+
+.gellery-modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  width: 370px;
+  height: 70px;
+  background-color:rgba(47, 48, 58, 0.8);
+ 
+}
+.gellery-text{
+  color: var(--text-color-logo-adres-btn);
+      font-weight: bold;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+ /* text-align: center;
+ font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em; */
 }
 
 /*Команда   */
@@ -362,12 +404,17 @@ img {
   width: 44px;
   height: 44px;
   fill: var(--icon-color);
+
+  transition-property: fill;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation);
 }
 
 .socials-link:hover,
 .socials-link:focus{
   fill: var(--text-color-logo-adres-btn);
-  background: var(--accent-text-color);
+  background-color: var(--accent-text-color);
 }
 
 
@@ -393,6 +440,11 @@ img {
     height: 92px;
     border: 1px solid var(--icon-color);
     border-radius: 4px;
+
+    transition-property: border-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--animation);
 }
 
 .clients-link-logo:hover,
@@ -411,6 +463,10 @@ border-color: var(--accent-text-color);
 width: 106px;
 height: 60px;
 fill: var(--icon-color);
+
+transition-property:fill;
+transition-duration: 250ms;
+transition-timing-function: var(--animation);
 }
 
 .clients-logo:hover,
@@ -469,6 +525,10 @@ fill: var(--icon-color);
     font-style: normal;
     display: block;
     color: var(--text-footer);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--animation);
 }
 
 .footer-contact:hover,
@@ -514,8 +574,11 @@ margin-right: 0px;
   width: 44px;
   height: 44px;
   background-color: var(--footer-icon);
-}
 
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation);
+}
 
 .footer-linc-icon:hover,
 .footer-linc-icon:focus{
@@ -549,6 +612,10 @@ fill: var(--text-color-logo-adres-btn);
   font-weight: 500;
   cursor: pointer;
   line-height: 1.62;
+
+  transition-property:color ;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation);
 }
 .filtr-btn:hover,
 .filtr-btn:focus {
@@ -577,6 +644,10 @@ fill: var(--text-color-logo-adres-btn);
 .portfolio-link {
   display: block;
   text-decoration: none;
+
+  transition-property: box-shadov;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation);
 }
 
 .portfolio-link:hover,
