@@ -768,8 +768,6 @@ color: var(--main-background-color);
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-
   opacity: 1;
 }
 
@@ -804,7 +802,6 @@ color: var(--main-background-color);
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background: #EAEAEA;
   cursor: pointer;
   
 }
