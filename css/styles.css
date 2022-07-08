@@ -799,6 +799,7 @@ color: var(--main-background-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background: #EAEAEA;
+  cursor: pointer;
 }
 
 .modal-btn:hover .modal-btn:focus {
@@ -806,7 +807,6 @@ color: var(--main-background-color);
 }
 
 .modal-icon {
-
   width: 11px;
   height: 11px;
 }
